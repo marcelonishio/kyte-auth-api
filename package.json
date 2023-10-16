@@ -1,0 +1,48 @@
+{
+  "name": "rest-services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve:dev": "tsx watch -r dotenv-flow/config src/server.ts",
+    "serve:prod": "npm run serve:production",
+    "serve:production": "tsx watch -r dotenv-flow/config src/server.ts --node-env=production",
+    "build": "tsup src",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@logdna/logger": "^2.6.7",
+    "axios": "^1.5.1",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.9",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "firebase": "^10.4.0",
+    "firebase-admin": "^11.10.1",
+    "jsonwebtoken": "^9.0.1",
+    "mongodb": "^6.1.0",
+    "uuid": "^9.0.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/bcrypt": "^5.0.0",
+    "@types/body-parser": "^1.19.2",
+    "@types/cors": "^2.8.13",
+    "@types/crypto-js": "^4.1.2",
+    "@types/express": "^4.17.17",   
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/node": "^20.3.2",
+    "@types/uuid": "^9.0.5",
+    "dotenv-flow": "^3.2.0",
+    "tsup": "^7.1.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  }
+}

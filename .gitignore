@@ -1,0 +1,13 @@
+
+# Dependency directories
+node_modules/
+
+# dotenv environment variables file
+.env
+.env.*
+
+dist/
+__snapshots__/
+.DS_Store
+*.code-workspace
+kyte-admin-staging-firebase-adminsdk-d9wf6-86da860013.json
