@@ -18,10 +18,6 @@ const inputSchema = z.object({
 })
 
 const checkUserWithEmail = async (req: Request, res: Response, next: NextFunction) => {
-
-
-    console.log('req.body ', req.body)
-
     let firebase = res.locals.firebase
     try {
         // Validação das informações

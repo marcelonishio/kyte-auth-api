@@ -16,7 +16,6 @@ import status from '@/routes/status'
 
 async function bootstrap() {
 
-
     /**
      * Instancia do serviço para log
      */
